@@ -169,9 +169,10 @@
         <h2 class="section-title">Contact me</h2>
 
         <div class="contact__container">
-            <div class="contact_content">
+             <div class="contact_content">
                 <div class="contact__title">Per collaborazioni, progetti, e <em>sogni da trasformare in solide realtà</em> puoi compilare il form qui sotto, oppure scrivermi all'indirizzo <a href="mailto:morales.elisa@yahoo.it">morales.elisa@yahoo.it</a>.</div>
                 <div class="form">
+                <form action="" class="contact__form">
                  <form action="" class="contact__form">
                     <div class="contact__form-div">
                         <label for="" class="contact__form-tag">Nome</label>
@@ -180,15 +181,17 @@
 
                     <div class="contact__form-div">
                         <label for="" class="contact__form-tag">Mail</label>
+                        <input type="email" placeholder="Inserisci la tua email" class="contact__form-input">
                         <input type="text" name="email" placeholder="Inserisci la tua email" class="contact__form-input">
                     </div>
+
                     <div class="contact__form-div contact__form-area">
                         <label for="" class="contact__form-tag">Messaggio</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Scrivi il tuo messaggio" class="contact__form-input"></textarea>
                         <textarea name="messaggio" cols="30" rows="10" placeholder="Scrivi il tuo messaggio" class="contact__form-input"></textarea>
                     </div>
                     <input type="submit" value="Invia">
-
-                </form></div>
+               </form></div>
             </div>
         </div>
 
@@ -238,25 +241,6 @@
  loop: true
 });
    </script>
-        
-        <script type="text/javascript">
-<!--
-function Email() {
-var email = document.modulo.email.value;
-var messaggio = document.modulo.messaggio.value;
-if ((email.indexOf("@") == (-1)) || (email == "") || (email == "undefined")) {
-alert("Inserire un indirizzo mail valido.");
-document.modulo.email.focus();
-}
-else if ((messaggio == "") || (messaggio == "undefined")) {
-alert("Inserire un messaggio.");
-document.modulo.messaggio.focus();
-}
-else {
-location.href = "mailto:morales.elisa@yahoo.it" + email + "&Body=" + messaggio;
-}
-}
-</script>
 
 </body>
 </html>
