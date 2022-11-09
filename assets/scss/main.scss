@@ -500,7 +500,7 @@ input[type=submit] {
         justify-self: center;
     }
 
-    .contact__form-input {
+    .contact__form-input ::placeholder {
         color: $text-color;
     }
 
