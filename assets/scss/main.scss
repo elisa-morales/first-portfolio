@@ -485,20 +485,24 @@ input[type=submit] {
         @include flexCenter(row);
         justify-content: space-between;
         padding: 0px 80px 60px 80px;
-      }    
+    }    
 
       .skills__icon {
         width: 40px;
-      }
+    }
 
     .form {
         @include flexCenter;
-      }
+    }
 
     .contact__form { 
         width: 450px;
         justify-self: center;
-}
+    }
+
+    .contact__form-input {
+        color: $text-color;
+    }
 
 }
 
