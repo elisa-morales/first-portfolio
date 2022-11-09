@@ -511,6 +511,12 @@ input, textarea {
         justify-self: center;
     }
 
+    input, textarea {
+        @include placeholder {
+            color: $text-color;
+        }
+    }
+
 }
 
 @media screen and (min-width: 767px) {

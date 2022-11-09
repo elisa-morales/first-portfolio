@@ -521,6 +521,14 @@ textarea::-webkit-input-placeholder {
         width: 450px;
         justify-self: center
     }
+
+    input::-webkit-input-placeholder {
+        color: #2d2d30;
+     }
+     
+     textarea::-webkit-input-placeholder {
+         color: #2d2d30;
+      }
 }
 
 @media screen and (min-width: 768px) {
