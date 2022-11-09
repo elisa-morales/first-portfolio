@@ -1,5 +1,5 @@
-@import './resets';
-@import './variables';
+@import '/assets/scss/resets';
+@import '/assets/scss/variables';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 @mixin flexCenter {
@@ -82,7 +82,7 @@ img {
     margin-right: $mb-2;
 }
 
-.lis-header {
+.sito-header {
     width: 100%;
     position: fixed;
     top: 0;
@@ -92,12 +92,6 @@ img {
 }
 
 /* nav */
-.nav {
-    height: $header-height;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 @media screen and (max-width: 769px) {
     .nav__menu {
@@ -114,21 +108,28 @@ img {
     }
 }
 
-.nav__logo {
-    font-size: 1.5rem;
-}
- 
-.nav__item {
-    margin-bottom: $mb-3;
-}
+.nav {
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.nav__link {
-    color: $first-color-light;
-    transition: .3s;
+	&__logo {
+		font-size: 1.5rem;
+	}
 
-    &:hover {
-        color: $second-color-dark;
-    }
+	&__item {
+	    margin-bottom: $mb-3;
+	}
+
+	&__link {
+	    color: $first-color-light;
+	    transition: .3s;
+
+	    &:hover {
+	        color: $second-color-dark;
+	    }
+	}
 }
 
 .nav__logo, .nav__toggle {
@@ -208,7 +209,7 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url('../img/bg-head.jpg');
+    background: url('/assets/img/bg-head.jpg');
    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -420,7 +421,7 @@ input[type=submit] {
 
 /* footer */
 .footer {
-    background-image: url('../img/bg-foot.jpg');
+    background-image: url('/assets/img/bg-foot.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -476,7 +477,7 @@ input[type=submit] {
 /* media queries */
 @media screen and (min-width: 576px) {
 
-    .about__container, .portfolio__container {
+    .about__container, .portfolio__container, .contact__container {
         grid-template-columns: repeat(2, 1fr);
     }
 
