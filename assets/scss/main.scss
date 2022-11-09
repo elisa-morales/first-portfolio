@@ -8,6 +8,13 @@
     align-items: center;    
 }
 
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}  
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -375,7 +382,6 @@ img {
     background: none;
     font-family: $body-font;
     font-size: $smaller-font-size;
-    color: $text-color;
     outline: none;
     padding: 1.5rem;
     border-radius: .75rem;
@@ -418,6 +424,11 @@ input[type=submit] {
       }
   }
   
+input, textarea {
+    @include placeholder {
+        color: $text-color;
+    }
+}
 
 /* footer */
 .footer {
@@ -498,10 +509,6 @@ input[type=submit] {
     .contact__form { 
         width: 450px;
         justify-self: center;
-    }
-
-    .contact__form-input ::placeholder {
-        color: $text-color;
     }
 
 }
